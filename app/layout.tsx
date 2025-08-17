@@ -1,5 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import Script from 'next/script';
+import Analytics from '@/components/Analytics';
 
 export const metadata: Metadata = {
   title: 'StageLeads.io — Speaker & attendee lists',
@@ -13,12 +15,27 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const gaId = process.env.NEXT_PUBLIC_GA_ID
   return (
     <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+        {/* GA base tag */}
+        {gaId && (
+          <>
+            <Script src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} strategy="afterInteractive" />
+            <Script id="ga-init" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${gaId}', { send_page_view: false });
+              `}
+            </Script>
+          </>
+        )}
       </head>
       <body>
         <header className="max-w-[960px] mx-auto px-5 py-6 flex items-center justify-between">
@@ -40,6 +57,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </nav>
           </div>
         </footer>
+        {/* Track SPA route changes */}
+        {gaId && <Analytics />}
       </body>
     </html>
   );

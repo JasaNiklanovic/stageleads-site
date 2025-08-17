@@ -148,7 +148,7 @@ export default function Home() {
               Custom Single Event
             </h3>
             <Button
-              href="https://jasanik.gumroad.com/l/vqesf"
+              href="https://stageleads.gumroad.com/l/vqesf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -158,7 +158,7 @@ export default function Home() {
           <div className="border rounded-2xl p-5 bg-white shadow-soft text-center">
             <h3 className="text-lg font-semibold mb-2">Custom Bundle (up to 3 events)</h3>
             <Button
-              href="https://jasanik.gumroad.com/l/qrtflr"
+              href="https://stageleads.gumroad.com/l/qrtflr"
               target="_blank"
               rel="noopener noreferrer"
             >

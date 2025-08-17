@@ -1,5 +1,5 @@
 export const events = [
-  { name: "Web Summit 2025", location: "Lisbon, Nov", price: 49, gumroadUrl: "https://gumroad.com/your-websummit-link", previewUrl: "#" },
+  { name: "Web Summit 2025", location: "Lisbon, Nov", price: 49, gumroadUrl: "https://niklanovic.gumroad.com/l/mvbjql", previewUrl: "#" },
   { name: "Slush 2025", location: "Helsinki, Dec", price: 49, gumroadUrl: "https://gumroad.com/your-slush-link", previewUrl: "#" },
   { name: "INBOUND 2025", location: "Boston, 2025", price: 49, gumroadUrl: "https://gumroad.com/your-inbound-link", previewUrl: "#" },
 ];

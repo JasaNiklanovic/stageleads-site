@@ -176,6 +176,7 @@ export default function Home() {
             <li>Save 20+ hours of manual LinkedIn research per event</li>
             <li>Focus on decision-makers only</li>
             <li>Import directly into HubSpot, Salesforce, or Outreach</li>
+            <li>No login or subscriptions needed</li>
           </ul>
           <div className="mt-4">
             <Button href="#bundles">Download your first list today →</Button>

@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import Analytics from '@/components/Analytics';
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: 'StageLeads.io — Speaker & attendee lists',
@@ -58,7 +59,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </footer>
         {/* Track SPA route changes */}
-        {gaId && <Analytics />}
+        {gaId && (
+          <Suspense fallback={null}>
+            <Analytics />
+          </Suspense>
+        )}
       </body>
     </html>
   );

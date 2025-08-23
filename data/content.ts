@@ -11,5 +11,5 @@ export const events = [
 export const bundles = [
   { title: "Tech Founders Bundle — $99", price: 99, includes: ["Web Summit 2025 (Lisbon, Nov)", "Slush 2025 (Helsinki, Dec)", "AI Summit 2025 (London, Jun)"], gumroadUrl: "https://stageleads.gumroad.com/l/elqoz", previewUrl: "/previews/event-sample.csv" },
   { title: "Marketing & Sales Leaders Bundle — $99", price: 99, includes: ["INBOUND 2025 (Boston)", "Web Summit Vancouver", "B2BMX 2025"], gumroadUrl: "https://stageleads.gumroad.com/l/clvgk", previewUrl: "/previews/event-sample.csv" },
-  { title: "Healthcare & BioTech Bundle — $99", price: 99, includes: ["HLTH 2025", "BioTech Showcase 2026", "HIMSS 2025"], gumroadUrl: "https://stageleads.gumroad.com/l/elqoz", previewUrl: "/previews/event-sample.csv" },
+  { title: "Healthcare & BioTech Bundle — $99", price: 99, includes: ["HLTH 2025", "BioTech Showcase 2026", "HIMSS 2025"], gumroadUrl: "https://stageleads.gumroad.com/l/ihxnhf", previewUrl: "/previews/event-sample.csv" },
 ];

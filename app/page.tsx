@@ -64,13 +64,19 @@ export default function Home() {
             href="#bundles"
             className="inline-block bg-brand text-white rounded-2xl px-5 py-3 font-semibold shadow-soft hover:-translate-y-0.5 transition"
           >
-            Get bundles
+            Get event bundles
           </a>
           <a
             href="#events"
             className="inline-block border border-brand text-brand rounded-2xl px-5 py-3 font-semibold hover:bg-blue-50 transition"
           >
-            Browse single events
+            Browse all events
+          </a>
+          <a
+            href="#request"
+            className="inline-block border border-brand text-brand rounded-2xl px-5 py-3 font-semibold hover:bg-blue-50 transition"
+          >
+            Request a specific event
           </a>
         </div>
         <p className="mt-2 text-xs text-slate-500">
@@ -208,7 +214,7 @@ export default function Home() {
               Order Custom Event → $49
             </Button>
             <p className="mt-2 text-xs text-slate-500">
-              Delivered within minutes after purchase.
+              Delivered shortly after purchase.
             </p>
           </div>
           <div className="border rounded-2xl p-5 bg-white shadow-soft text-center">
@@ -223,7 +229,7 @@ export default function Home() {
               Order Custom Bundle → $99
             </Button>
             <p className="mt-2 text-xs text-slate-500">
-              Instant checkout, instant delivery.
+              Delivered shortly after purchase.
             </p>
           </div>
         </div>
